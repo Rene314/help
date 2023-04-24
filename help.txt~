@@ -1,0 +1,10 @@
+echo "# help" >> README.md
+git init help
+cd help
+touch help.txt
+git add help.txt
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Rene314/help.git
+git push -u origin main
+
