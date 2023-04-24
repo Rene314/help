@@ -8,27 +8,26 @@ git branch -M main
 git remote add origin https://github.com/Rene314/help.git
 git push -u origin main
 -------------------------------------
-xse@xse01:~/Documents$ git init help
-Initialized empty Git repository in /home/xse/Documents/help/.git/
-xse@xse01:~/Documents$ cd help
-xse@xse01:~/Documents/help$ touch help.txt
-xse@xse01:~/Documents/help$ git add help.txt
-xse@xse01:~/Documents/help$ git commit -m "first commit"
-[main (root-commit) 2f63422] first commit
- 1 file changed, 10 insertions(+)
- create mode 100644 help.txt
-xse@xse01:~/Documents/help$ git branch -M main
-xse@xse01:~/Documents/help$ git remote add origin https://github.com/Rene314/help.git
+I modify help.txt on local
+
+xse@xse01:~/Documents/help$ git add .
+xse@xse01:~/Documents/help$ git commit "help.txt update 3"
+error: pathspec 'help.txt update 3' did not match any file(s) known to git
+xse@xse01:~/Documents/help$ git commit -m "help.txt update 3"
+[main 6accdb9] help.txt update 3
+ 2 files changed, 36 insertions(+)
+ create mode 100644 help.txt~
 xse@xse01:~/Documents/help$ git push -u origin main
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
 Delta compression using up to 4 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 755 bytes | 755.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Rene314/help.git
- * [new branch]      main -> main
+   2f63422..6accdb9  main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
+xse@xse01:~/Documents/help$ 
 
 -------------------------------------
 
