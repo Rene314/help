@@ -33,6 +33,11 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 $ 
 
 -------------------------------------
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/Rene314/help.git
+git branch -M main
+git push -u origin main
 
 
 

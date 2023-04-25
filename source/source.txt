@@ -1,0 +1,4 @@
+total 8
+drwxrwxr-x 2 xse xse 4096 Apr 25 07:53 .
+drwxrwxr-x 4 xse xse 4096 Apr 25 07:53 ..
+-rw-rw-r-- 1 xse xse    0 Apr 25 07:53 source.txt

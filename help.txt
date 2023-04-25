@@ -38,6 +38,8 @@ $
 git remote add origin https://github.com/Rene314/help.git
 git branch -M main
 git push -u origin main
+----------------------------------------
+second day: adding a folder
 
 
 
