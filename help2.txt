@@ -1,0 +1,45 @@
+I create repo help on github
+
+git init help
+cd help
+touch help.txt
+git add help.txt
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Rene314/help.git
+git push -u origin main
+
+-------------------------------------
+I modify help.txt on local
+
+$ git add .
+
+$ git commit -m "help.txt update 3"
+[main 6accdb9] help.txt update 3
+ 2 files changed, 36 insertions(+)
+ create mode 100644 help.txt~
+
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 755 bytes | 755.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Rene314/help.git
+   2f63422..6accdb9  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+$ 
+
+-------------------------------------
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/Rene314/help.git
+git branch -M main
+git push -u origin main
+----------------------------------------
+second day: adding a folder
+
+
+
