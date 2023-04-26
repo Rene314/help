@@ -287,8 +287,74 @@ Total 37 (delta 5), reused 0 (delta 0), pack-reused 0
 To xse01:/opt/lampp/htdocs/git_repos/tisechi.git
  * [new branch]      main -> main
 
+STEP 5: Pull files from remote repository into local repository
+
+Step 5.1: create a folder temp
+
+xse@xse01:/opt/lampp/htdocs/git_project$ cd ..
+xse@xse01:/opt/lampp/htdocs$ mkdir temp
+
+Step 5.2: Create a local repo inside the folder temp
+
+xse@xse01:/opt/lampp/htdocs$ cd temp
+xse@xse01:/opt/lampp/htdocs/temp$ git init
+Initialized empty Git repository in /opt/lampp/htdocs/temp/.git/
+
+Step 5.3: Connect local repo to remote repo at /opt/lampp/htdocs/git_repos/tisechi.git
+
+xse@xse01:/opt/lampp/htdocs/temp$ git remote add origin xse@xse01:/opt/lampp/htdocs/git_repos/tisechi.git
+
+Step 5.4: Pull files from remote repo into local repo
+
+xse@xse01:/opt/lampp/htdocs/temp$ git pull origin main
+
+xse@xse01's password: 
+From xse01:/opt/lampp/htdocs/git_repos/tisechi
+ * branch            main       -> FETCH_HEAD
+xse@xse01:/opt/lampp/htdocs/temp$ ls -al
+total 100
+drwxrwxr-x  6 xse  xse   4096 Apr 25 20:11  .
+drwxrwxrwx 25 root root  4096 Apr 25 20:02  ..
+drwxrwxr-x  4 xse  xse   4096 Apr 25 20:11  css
+drwxrwxr-x  8 xse  xse   4096 Apr 25 20:11  .git
+drwxrwxr-x  2 xse  xse   4096 Apr 25 20:11  images
+-rw-rw-r--  1 xse  xse   5951 Apr 25 20:11 'index2 copy.html'
+-rw-rw-r--  1 xse  xse  11220 Apr 25 20:11  index2.html
+-rw-rw-r--  1 xse  xse   4051 Apr 25 20:11 'index copy 2.html'
+-rw-rw-r--  1 xse  xse   4056 Apr 25 20:11 'index copy 3.html'
+-rw-rw-r--  1 xse  xse   4056 Apr 25 20:11 'index copy 4.html'
+-rw-rw-r--  1 xse  xse  15910 Apr 25 20:11 'index copy.html'
+-rw-rw-r--  1 xse  xse  25205 Apr 25 20:11  index.html
+drwxrwxr-x  5 xse  xse   4096 Apr 25 20:11  js
+xse@xse01:/opt/lampp/htdocs/temp$ 
+
+Step 5.5: Misterious step
+
+xse@xse01:/opt/lampp/htdocs/temp$ git pull 
+xse@xse01's password: xse2049
+remote: Enumerating objects: 37, done.
+remote: Counting objects: 100% (37/37), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 37 (delta 5), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (37/37), 719.73 KiB | 2.89 MiB/s, done.
+From xse01:/opt/lampp/htdocs/git_repos/tisechi
+ * [new branch]      main       -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
 
 
+STEP 6: Update REAME.html at local repo in git_project into remote repo at https://github.com/Rene314/help.git
+
+
+
+$ git remote add origin https://github.com/Rene314/help.git
 
 
 
