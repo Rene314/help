@@ -352,9 +352,28 @@ If you wish to set tracking information for this branch you can do so with:
 
 STEP 6: Update REAME.html at local repo in git_project into remote repo at https://github.com/Rene314/help.git
 
+xse@xse01:/opt/lampp/htdocs$ cd git_project
+
+xse@xse01:/opt/lampp/htdocs/git_project$ git add README.html
+
+xse@xse01:/opt/lampp/htdocs/git_project$ git commit -m "README.html"
+[main 2da95a4] README.html
+ 1 file changed, 66 insertions(+)
+
+xse@xse01:/opt/lampp/htdocs/git_project$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.11 KiB | 378.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Rene314/help.git
+   1c19d5c..2da95a4  main -> main
+xse@xse01:/opt/lampp/htdocs/git_project$ 
 
 
-$ git remote add origin https://github.com/Rene314/help.git
+
 
 
 
